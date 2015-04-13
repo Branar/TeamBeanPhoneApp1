@@ -28,11 +28,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="-4,71,0,0" Name="textBox1" Text="TextBox" VerticalAlignment="Top" Width="460" />
+            <phone:WebBrowser DataContext="{Binding}" Height="420" HorizontalAlignment="Left" IsGeolocationEnabled="True" IsScriptEnabled="True" Margin="5,83,0,0" Name="webBrowser1" Source="https://www.google.co.uk/maps/@53.2182958,-0.5554965,13z" VerticalAlignment="Top" Width="444" />
+            <TextBox HorizontalAlignment="Left" Margin="-4,71,0,438" Name="textBox1" Text="Enter Location Here" Width="460" SelectionForeground="#FFADADAD" SelectionBackground="#FF626060" Background="#FF585858" TextChanged="textBox1_TextChanged" Foreground="White" />
             <TextBlock Height="50" HorizontalAlignment="Left" Margin="6,39,0,0" Name="textBlock1" Text="Enter Location" VerticalAlignment="Top" Width="201" FontSize="30" />
-            <Button Content="Find" Height="72" HorizontalAlignment="Left" Margin="147,149,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="button1_Click" />
+            <Button Content="Find" Height="72" HorizontalAlignment="Left" Margin="147,149,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="button1_Click" Background="#FF585858"></Button>
             <Button Content="Home" Height="72" HorizontalAlignment="Left" Margin="148,509,0,0" Name="button2" VerticalAlignment="Top" Width="160" Click="button2_Click" />
-            <phone:WebBrowser DataContext="{Binding}" Height="290" HorizontalAlignment="Left" IsGeolocationEnabled="True" IsScriptEnabled="True" Margin="10,213,0,0" Name="webBrowser1" Source="https://www.google.co.uk/maps/@53.2182958,-0.5554965,13z" VerticalAlignment="Top" Width="444" />
         </Grid>
     </Grid>
  

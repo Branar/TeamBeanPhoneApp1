@@ -20,16 +20,12 @@ namespace PhoneApp1
         public MainPage()
         {
             InitializeComponent();
+            
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Search.xaml", UriKind.Relative));
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.Relative));
         }
 
     }

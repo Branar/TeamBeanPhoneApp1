@@ -24,12 +24,19 @@ namespace PhoneApp1
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            
+            string inputString = textBox1.Text;
+            //Search Database for matches
+            //then run matches through address in google maps
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
 
     }
