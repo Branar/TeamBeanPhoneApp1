@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using System.Device.Location;
 using Microsoft.Phone.Controls;
 
 namespace PhoneApp1
@@ -19,6 +20,16 @@ namespace PhoneApp1
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Search.xaml", UriKind.Relative));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.Relative));
         }
 
     }

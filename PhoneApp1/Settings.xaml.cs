@@ -16,9 +16,12 @@ namespace PhoneApp1
 {
     public partial class Settings : PhoneApplicationPage
     {
+
+
         public Settings()
         {
             InitializeComponent();
+            
         }
 
         private void radioButton1_Checked(object sender, RoutedEventArgs e)
@@ -26,9 +29,26 @@ namespace PhoneApp1
             GeoCoordinateWatcher watchGeo = new GeoCoordinateWatcher(GeoPositionAccuracy.High);
             watchGeo.MovementThreshold = 1.0;
             watchGeo.TryStart(false, TimeSpan.FromMilliseconds(1000));
-            GeoCoordinate holdGeo = new GeoCoordinate();
-            holdGeo = watchGeo.Position.Location;
+
+            var holdGeo = watchGeo.Position;
+            holdGeo = watchGeo.Position;
+            double latitude = 0.0;
+            double longitude = 0.0;
+            if (!holdGeo.Location.IsUnknown)
+            {
+
+            }
         }
+        private void radioButton1_Unchecked(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+
 
     }
 }

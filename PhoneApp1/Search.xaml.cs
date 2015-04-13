@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using System.Device.Location;
 using Microsoft.Phone.Controls;
 
 namespace PhoneApp1
@@ -18,6 +19,17 @@ namespace PhoneApp1
         public Search()
         {
             InitializeComponent();
+            WebBrowser.VisibilityProperty.Equals(true);
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
 
     }

@@ -28,9 +28,9 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <RadioButton Content="Allow Location Services" Height="72" HorizontalAlignment="Left" Margin="37,22,0,0" Name="radioButton1" VerticalAlignment="Top" Checked="radioButton1_Checked" />
+            <RadioButton Content="Allow Location Services" Height="72" HorizontalAlignment="Left" Margin="37,22,0,0" Name="radioButton1" VerticalAlignment="Top" Checked="radioButton1_Checked" Unchecked="radioButton1_Unchecked" />
             <RadioButton Content="Allow Push Notifications" Height="72" HorizontalAlignment="Left" Margin="37,100,0,0" Name="radioButton2" VerticalAlignment="Top" />
-            <Button Content="Home" Height="72" HorizontalAlignment="Left" Margin="147,512,0,0" Name="button1" VerticalAlignment="Top" Width="160" />
+            <Button Content="Home" Height="72" HorizontalAlignment="Left" Margin="147,512,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="button1_Click" />
         </Grid>
     </Grid>
  
